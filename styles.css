@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --link-color: #4b7f1c;
+    --sidebar-width: 35vw;
+}
+
+html {
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+    gap: 5rem;
+}
+
+#sidebar-img{
+    height: 100vh;
+    width: var(--sidebar-width);
+}
+
+.form-fields {
+    margin-top: 5rem;
+    margin-bottom: auto;
+    height: 12rem;
+    min-width: 1000px;
+    background-color: white;
+    box-shadow: #e6e6e6 2px 3px;
+    padding-top: 3rem;
+}
+
+.form-pair {
+    display: flex;
+    gap: 5rem;
+    align-content: center;
+}
+
+#login_form label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+#signup-btn {
+    margin-top: 1.2em;
+   padding: 0.7rem 1em;
+    background: var(--link-color);
+    color: whitesmoke;
+    border-radius: 0.3rem;
+    border: none;
+    font-weight: bold;
+}
+
+#signup-btn:hover {
+    cursor: pointer;
+    padding: 0.9em 1.2em;
+}
+
+input {
+    border-radius: 0.2rem;
+    height: 20px;
+    width: 250px;
+    padding: 0.2em;
+}
+
+.form-pair:nth-of-type(2), .form-pair:nth-of-type(3) {
+    margin-top: 0.5em
+}
+
+input:invalid {
+    border-color: crimson;
+}
+
+input:focus {
+    border-color: lightblue;
+}
+
+.form-part {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-part #intro-text {
+    margin-top: 10rem;
+    max-width: 66ch;
+    font-size: 1.2rem;
+}
+
+#intro-text h1 {
+    font-size: 2em;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #444f3a;
+}
+
+#intro-text p {
+    font-style: italic;
+}
+
+#logo {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    transform: translate(-43%, -43%);
+    color: #ffffff;
+    text-align: center;
+    background-color: #444f3a;
+    opacity: 0.7;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: var(--sidebar-width);
+    height: 20px;
+}
+
+footer {
+    position: absolute;
+    color: white;
+    left: 20%;
+    bottom: 0;
+    opacity: 0.5;
+
+}

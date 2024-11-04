@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <meta charset="UTF-8" />
+    <title>Sign Up form</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main id="main">
+      <section class="container">
+        <h2 class="transparent-bg" id="logo">USER AUTHENTICATION SERVICE</h2>
+        <section id="sidebar">
+          <img
+            alt="An image of a man standing in the darkness"
+            id="sidebar-img"
+            src="images/ahmet-kahveci-5gJjVnLtp9k-unsplash.jpg"
+          />
+        </section>
+
+        <section class="form-part">
+          <section id="intro-text">
+            <h1>A simple Sign-Up Form</h1>
+            <p class="text">
+              This is not a real signup system. It's just part of a project I
+              did while going through
+              <a href="https://theodingproject.com" target="_blank"
+                >The Odin Project's</a
+              >
+              Ruby on Rails Web Development program
+            </p>
+          </section>
+          <section id="login_form">
+            <form
+              action="#"
+              enctype="application/x-www-form-urlencoded"
+              method="post"
+            >
+              <section class="form-fields">
+                <section class="form-pair">
+                  <p>
+                    <label for="first_name">First Name</label>
+                    <input
+                      id="first_name"
+                      name="first_name"
+                      placeholder="John"
+                      required
+                      type="text"
+                    />
+                  </p>
+                  <p>
+                    <label for="last_name">Last Name</label>
+                    <input
+                      id="last_name"
+                      name="last_name"
+                      placeholder="Doe"
+                      required
+                      type="text"
+                    />
+                  </p>
+                </section>
+                <section class="form-pair">
+                  <p>
+                    <label for="email">Email</label>
+                    <input
+                      id="email"
+                      name="email"
+                      placeholder="jdoe@example.com"
+                      required
+                      type="email"
+                    />
+                  </p>
+                  <p>
+                    <label for="phone_number">Phone Number</label>
+                    <input
+                      id="phone_number"
+                      name="phone_number"
+                      pattern="\+(\d+)\s(\d{2})\s(\d{3})\s(\d{4})"
+                      placeholder="+233 56 123 4567"
+                      required
+                      title="A Ghanaian phone number follows the pattern. Use the pattern +233 56 123 4567"
+                      type="tel"
+                    />
+                  </p>
+                </section>
+                <section class="form-pair">
+                  <p>
+                    <label for="password">Password</label>
+                    <input
+                      id="password"
+                      name="password"
+                      required
+                      type="password"
+                    />
+                  </p>
+                  <p>
+                    <label for="password_confirmation">Confirm Password</label>
+                    <input
+                      id="password_confirmation"
+                      name="password"
+                      required
+                      type="password"
+                    />
+                  </p>
+                </section>
+              </section>
+              <button id="signup-btn" type="submit">Create Account</button>
+              <p>
+                <small>Already have an account? <a href="#">Log in</a></small>
+              </p>
+            </form>
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer>Photo Credit: Ahmet Kahveci</footer>
+  </body>
+</html>
